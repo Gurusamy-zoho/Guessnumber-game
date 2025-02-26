@@ -1,0 +1,58 @@
+/* body{
+    background: rgb(12,72,138);
+    background: linear-gradient(90deg, rgba(12,72,138,1) 35%, rgba(38,118,172,1) 71%, rgba(99,187,235,1) 91%); 
+} */
+
+#MainContainer{
+  background-color: white;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  left: 500px;
+  top: 200px;
+  border-radius: 10px;
+}
+
+h2{
+    padding: 10px;
+}
+
+#inputBox{
+    padding-left:10px;
+    height: 30px;
+    
+}
+
+#inputBoxDiv{
+ position: relative;
+ left: 110px;
+ top: 40px;
+}
+
+#buttonDiv{
+    position: relative;
+    left: 110px;
+    top: 70px;
+}
+
+#Guess{
+    width: 70px;
+    height: 30px;
+}
+
+#Clear{
+    margin-left: 30px;
+    width: 70px;
+    height: 30px;
+}
+
+
+#showRes{
+  margin-top: 100px;
+  margin-left: 180px;
+}
+
+span{
+    position: relative;
+    left: 210px;
+}

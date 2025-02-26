@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Numbers</title>
+    <link rel="stylesheet" href="GuessNumber.css">
+</head>
+<body>
+    <div id="MainContainer">
+       <h2>Guessing Number👻</h2>
+       <span id="Chances">Remaining Chances:5 </span>
+       <div id="inputBoxDiv">
+        <input type="tel" maxlength="2" placeholder="Enter the numbers" oninput="validateNumberInput(event)" id="inputBox">
+       </div>
+
+       <div id="buttonDiv">
+        <button id="Guess" onclick="guessingnum()">Guess</button>
+        <button id="Clear" onclick="clearinput()">Clear</button>
+       </div>
+
+       <div id="showRes"></div>
+    </div>
+</body>
+ <script src="GuessNumber.js"></script>
+</html>
