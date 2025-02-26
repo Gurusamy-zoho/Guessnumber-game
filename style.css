@@ -1,7 +1,7 @@
-/* body{
+body{
     background: rgb(12,72,138);
     background: linear-gradient(90deg, rgba(12,72,138,1) 35%, rgba(38,118,172,1) 71%, rgba(99,187,235,1) 91%); 
-} */
+}
 
 #MainContainer{
   background-color: white;
