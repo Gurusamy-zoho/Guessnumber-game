@@ -1,6 +1,6 @@
 
 
-let chance = 5;
+let chance = 10;
 
 
 function validateNumberInput(event){
