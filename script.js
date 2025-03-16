@@ -11,7 +11,7 @@ function validateNumberInput(event){
 }
 
 setTimeout(function() {
-   alert("Given input only betwwen 0 to 100 only")
+   alert("Given input only between 0 to 100 only")
 }, 500);
 
 function getRandomIntInclusive(min, max) {
@@ -23,15 +23,17 @@ const randomIntInclusive = getRandomIntInclusive(0, 100);
 
 function guessingnum(){
 
+    let input = document.getElementById("inputBox").value;
+    let Result = document.getElementById("showRes");
+
     chance--;
 
     if(chance<0){
-        alert ("Your change is finsihed");
+        Result.textContent = `💀 Game Over! The correct number was ${randomIntInclusive}.`;
         return;
     }
 
-    let input = document.getElementById("inputBox").value;
-    let Result = document.getElementById("showRes");
+   
 
     if(input===""){
         alert("input can't be empty");
@@ -44,22 +46,22 @@ function guessingnum(){
 
 
    if(randomIntInclusive==input){
-     Result.innerHTML = "Successfully you guessed";
+     Result.innerHTML = "Successfully you guessed 🎉🥳";
      return;
    }
 
    if(randomIntInclusive<input){
-    Result.innerHTML = "High";
+    Result.innerHTML = "📈 Too high! Try again.";
    }
 
    if(randomIntInclusive>input){
-    Result.innerHTML = "Low";
+    Result.innerHTML = "📉 Too low! Try again.";
    }
 
    setTimeout(function() {
     document.getElementById('showRes').innerHTML = "";
-}, 1500);
-document.getElementById("inputBox").value = "";
+}, 2000);
+   
 }
 
 function clearinput(){
