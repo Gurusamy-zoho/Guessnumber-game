@@ -1,16 +1,26 @@
-body{
+/* body{
     background: rgb(12,72,138);
     background: linear-gradient(90deg, rgba(12,72,138,1) 35%, rgba(38,118,172,1) 71%, rgba(99,187,235,1) 91%); 
-}
+} */
 
-#MainContainer{
+*{
+    
+    cursor: pointer;
+}
+body{
+    background-color: whitesmoke;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+ #MainContainer{
   background-color: white;
   width: 400px;
   height: 300px;
-  position: relative;
-  left: 500px;
-  top: 200px;
   border-radius: 10px;
+
 }
 
 h2{
@@ -18,41 +28,56 @@ h2{
 }
 
 #inputBox{
+    width: 210px;
     padding-left:10px;
     height: 30px;
-    
+    border-radius: 2px;
+    position: relative;
+    left: 85px;
+    top: 40px;
 }
 
-#inputBoxDiv{
- position: relative;
- left: 110px;
- top: 40px;
-}
+
 
 #buttonDiv{
     position: relative;
-    left: 110px;
+    left: 80px;
     top: 70px;
 }
 
 #Guess{
-    width: 70px;
+    width: 100px;
     height: 30px;
+    background-color: rgb(59, 172, 71);
+    border:none;
+    color: white;
+    border-radius: 5px;
+}
+
+#Guess:hover{
+    background-color: rgb(40, 200, 71);
 }
 
 #Clear{
     margin-left: 30px;
-    width: 70px;
+    width: 100px;
     height: 30px;
+    background-color: rgb(228, 39, 39);
+    border:none;
+    color: white;
+    border-radius: 5px;
 }
 
+#Clear:hover{
+   background-color: rgb(232, 81, 81);
+}
 
 #showRes{
-  margin-top: 100px;
-  margin-left: 180px;
+   text-align: center;
+   margin-top: 90px;
 }
 
 span{
     position: relative;
     left: 210px;
-}
+} 
