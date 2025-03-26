@@ -11,7 +11,21 @@ function validateNumberInput(event){
 }
 
 setTimeout(function() {
-   alert("Given input only between 0 to 100 only")
+    Swal.fire({
+        title: 'Game Rule',
+        html: `Given input between 0 and 100`,
+        icon: 'warning',
+        confirmButtonText: 'Done',
+        timer: 3000,
+        position: 'center',
+        heightAuto: false,
+        showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+        }
+    });
 }, 500);
 
 function getRandomIntInclusive(min, max) {
@@ -29,14 +43,43 @@ function guessingnum(){
     chance--;
 
     if(chance<0){
-        Result.textContent = `💀 Game Over! The correct number was ${randomIntInclusive}.`;
+        Result.textContent = ``;
+        Swal.fire({
+            title: 'Game Over 💀',
+            html: `Game Over! The correct number was ${randomIntInclusive}.`,
+            icon: 'info',
+            confirmButtonText: 'Done',
+            timer: 3000,
+            position: 'center',
+            heightAuto: false,
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
+        });
         return;
     }
 
    
 
     if(input===""){
-        alert("input can't be empty");
+        Swal.fire({
+            title: 'Error',
+            html: `Input is empty`,
+            icon: 'error',
+            confirmButtonText: 'Ok',
+            timer: 3000,
+            position: 'center',
+            heightAuto: false,
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
+        });
         return;
     }
 
