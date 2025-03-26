@@ -62,7 +62,7 @@ function guessingnum(){
         return;
     }
 
-   
+
 
     if(input===""){
         Swal.fire({
